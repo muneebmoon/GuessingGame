@@ -38,8 +38,8 @@ namespace GuessingGame
                     count++;
                     attemptCount.Text = Convert.ToString(count);
                     MessageBox.Show($"Welldone! You guessed the number correctly at Attempt {count}");
-                    input.Text = "";
-                    input.Focus();
+                    Application.Restart();
+                    
                 }
                 else if (userNumber > number)
                 {
